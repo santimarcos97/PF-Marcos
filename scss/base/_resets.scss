@@ -1,0 +1,58 @@
+@import '../base/vars';
+@import '../base/utilities';
+
+@font-face {
+  font-family: 'titillium';
+  src: url('../assets/Titillium_Web/TitilliumWeb-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'titillium';
+  }
+
+  body {
+    background-color: $quaternary-color;
+    font-family: 'titillium';
+}
+
+a {
+  text-decoration: none;
+}
+
+.font-sans {
+  font-family: 'titillium';
+  font-weight: bold;
+}
+
+.font-fm {
+  font-family: 'titillium';
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  @include tittle(bold, center, 2.5rem, $quaternary-color);
+}
+
+.ticket {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  font-weight: bold;
+  font-family: 'titillium';
+  font-size: 3rem;
+  color: $light-color;
+}
+
+@media (max-width: 768px) {
+  .ticket {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}

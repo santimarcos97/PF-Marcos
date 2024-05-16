@@ -1,0 +1,16 @@
+/* base */
+
+@import 'base/resets';
+@import 'base/vars';
+@import 'base/utilities';
+
+/* components */
+@import 'components/navbar';
+@import 'components/footer';
+
+/* layouts */
+@import 'layouts/index';
+@import 'layouts/entradas';
+@import 'layouts/equipos';
+@import 'layouts/tienda';
+@import 'layouts/contacto';
