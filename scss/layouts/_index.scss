@@ -1,0 +1,297 @@
+/* index section */
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 10px;
+  padding-top: 80px;
+  background-image: linear-gradient(to bottom, $quaternary-color, $tertiary-color)
+  }
+
+@media (max-width: 1024px) {
+  .hero {
+    @include flex(column, center, center, 20px);
+    flex-wrap: wrap;
+    font-size: 1rem;
+  }
+
+  .hero-content img {
+    width: 70%;
+  }
+
+}
+
+.hero-content {
+  img {
+    @include img (70%, 500px, cover);
+    border-radius: 20px;
+    border: 2px solid $secondary-color;
+    box-shadow: 10px 10px 10px $quaternary-color;
+  }
+
+  padding: 10px;
+  @include flex(column, center, center, 20px);
+
+  p {
+    @include text(1.3rem, center, $dark-color);
+    padding: 10px;
+  }
+
+  h2 {
+    @include tittle (bold, center, 2rem, $dark-color);
+    padding: 15px;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid transparent;
+    color: $tertiary-color;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: $quaternary-color;
+    font-family: 'titillium';
+    font-weight: bold;
+    box-shadow: 5px 5px 20px $secondary-color;
+
+    &:hover {
+      background-color: $tertiary-color;
+      border-radius: 30px;
+      padding: 10px;
+      transition: 0.4s;
+      color: $quaternary-color;
+      border: 1px solid $quaternary-color;
+      box-shadow: 5px 5px 5px $quaternary-color;
+    }
+  }
+}
+
+.hero-article {
+    display: flex;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+}
+  
+.container-section {
+    padding-bottom: 150px;
+}
+
+.hero-article img {
+  display: flex;
+  @include img (700px, 100%, cover);
+  border-radius: 40px;
+  border: 2px solid $tertiary-color;
+  box-shadow: 10px 10px 15px $dark-color;
+}
+
+@media (max-width: 1024px) {
+    .container-section {
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+ }
+
+    .hero-content {
+      h2 {
+        @include tittle(bold, center, 1.2rem, $dark-color);
+        padding: 15px;
+      }
+
+      p {
+        @include text(1rem, center, $dark-color);
+        padding: 10px;
+      }
+
+      a{
+        font-size: 1rem;
+      }
+    }
+
+    .hero-article {
+      img {
+        @include img (100%, 100%, cover);
+      }
+
+    .container-content {
+      h2 {
+        @include tittle(bold, center, 1.3rem, $light-color);
+      }
+
+      p {
+        @include text (1rem, center, $light-color);
+      }
+
+      a {
+        font-size: 1rem;
+      }
+    }  
+      flex-direction: column;
+      font-size: 1rem;
+    }
+
+}
+
+.container-content {
+    h2 {
+      @include tittle(bold, center, 2rem, $light-color);
+    }
+  
+    p {
+      @include text (1.2rem, center, $light-color);
+    }
+  
+    padding: 30px;
+    @include flex(column, center, center, 15px);
+  
+    a {
+      text-decoration: none;
+      padding: 7px;
+      border: 1px solid $tertiary-color;
+      width: 70%;
+      text-align: center;
+      color:$quaternary-color;
+      font-size: 20px;
+      background-color: $tertiary-color;
+      border-radius: 15px;
+      font-family: 'titillium';
+      font-weight: bold;
+      box-shadow: 5px 5px 5px $dark-color;
+
+      &:hover {
+        background-color: $quaternary-color;
+        color: $tertiary-color;
+        border-radius: 20px;
+        padding: 7px;
+        transition: 0.4s;
+        box-shadow: 5px 5px 5px $tertiary-color;
+      }
+    }
+}
+  /* pilotos section */
+
+.tittle-pilotos {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-around;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'titillium';
+    font-size: 3rem;
+    background-color: $tertiary-color;
+    color: $quaternary-color;
+    margin-bottom: 0;
+}
+
+.pilotos-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "piloto1 piloto1 piloto2 piloto2" "piloto3 piloto3 piloto4 piloto4" "piloto5 piloto5 piloto6 piloto6";
+  padding: 10px;
+  gap: 10px;
+  background-image: linear-gradient(to bottom, $tertiary-color, $quaternary-color);
+}
+
+.pilotos-box img {
+  @include img (100%, 100%, cover);
+  object-position: center;
+  border-radius: 15px;
+  border: 2px solid $tertiary-color;
+  box-shadow: 5px 5px 10px $dark-color;
+  }
+
+.pilotos-box {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+  
+.p1 {
+    grid-area: piloto1;
+}
+  
+.p2 {
+    grid-area: piloto2;
+}
+  
+.p3 {
+    grid-area: piloto3;
+}
+  
+.p4 {
+    grid-area: piloto4;
+}
+  
+.p5 {
+    grid-area: piloto5;
+}
+  
+.p6 {
+    grid-area: piloto6;
+}
+
+.driver-content {
+  position: absolute;
+  @include flex-driver(column, flex-end, center, 10px);
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  color: white;
+
+  h4 {
+    @include tittle(bold, center, 1.8rem, $quaternary-color);
+    background-color: $tertiary-color;
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px $quaternary-color;
+  }
+
+  a {
+    color: $tertiary-color;
+    padding: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid $tertiary-color;
+    border-radius: 10px;
+    background-color: $quaternary-color;
+
+    &:hover {
+      background-color: $tertiary-color;
+      transition: 0.5s;
+      color: $quaternary-color;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .pilotos-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "piloto1 piloto1" "piloto2 piloto2" "piloto3 piloto3" "piloto4 piloto4" "piloto5 piloto5" "piloto6 piloto6";
+  }
+
+  .driver-content {
+    text-align: center;
+
+    h4 {
+      font-size: 1.5rem;
+    }
+
+    a {
+      font-size: 1.2rem;
+    }
+  }
+
+  .tittle-pilotos {
+    font-size: 1.8rem;
+  }
+
+  .ticket {
+    font-size: 2rem;
+  }
+}
