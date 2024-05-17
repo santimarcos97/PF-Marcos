@@ -41,7 +41,7 @@ h1 {
 
 .ticket {
   display: flex;
-  padding: 20px;
+  padding: 80px;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-around;
@@ -269,7 +269,7 @@ nav img {
 /* pilotos section */
 .tittle-pilotos {
   display: flex;
-  padding: 20px;
+  padding: 100px;
   gap: 20px;
   justify-content: space-around;
   text-align: center;
@@ -287,7 +287,8 @@ nav img {
   grid-template-rows: auto;
   grid-template-areas: "piloto1 piloto1 piloto2 piloto2" "piloto3 piloto3 piloto4 piloto4" "piloto5 piloto5 piloto6 piloto6";
   padding: 10px;
-  gap: 10px;
+  padding-bottom: 50px;
+  gap: 20px;
   background-image: linear-gradient(to bottom, #FFDCDC, #3a0000);
 }
 
@@ -397,8 +398,9 @@ nav img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  gap: 20px;
+  padding-top: 50px;
+  padding-bottom: 90px;
+  gap: 50px;
 }
 
 .card {
@@ -586,6 +588,7 @@ nav img {
   grid-template-rows: auto;
   grid-template-areas: "noticia1 noticia1 noticia1 noticia2" "noticia3 noticia4 noticia4 noticia4" "noticia5 noticia5 noticia6 noticia6";
   padding: 10px;
+  padding-bottom: 60px;
   gap: 10px;
 }
 
@@ -847,6 +850,7 @@ nav img {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 50px;
 }
 
 form {

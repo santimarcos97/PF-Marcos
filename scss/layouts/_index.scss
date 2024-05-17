@@ -175,7 +175,7 @@
 
 .tittle-pilotos {
     display: flex;
-    padding: 20px;
+    padding: 100px;
     gap: 20px;
     justify-content: space-around;
     text-align: center;
@@ -193,7 +193,8 @@
   grid-template-rows: auto;
   grid-template-areas: "piloto1 piloto1 piloto2 piloto2" "piloto3 piloto3 piloto4 piloto4" "piloto5 piloto5 piloto6 piloto6";
   padding: 10px;
-  gap: 10px;
+  padding-bottom: 50px;
+  gap: 20px;
   background-image: linear-gradient(to bottom, $tertiary-color, $quaternary-color);
 }
 
